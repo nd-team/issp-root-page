@@ -1,0 +1,14 @@
+{
+  "default":"dev",
+  "dev": {
+    "rurl": "https://grenade.issp.bjike.com:8080",
+    "durl": "https://lendreimbursement.issp.bjike.com:8080",
+    "burl": "https://businessproject.issp.bjike.com:8080",
+    "vurl": "https://organize.issp.bjike.com:8080",
+    "curl": "https://user.issp.bjike.com:8080",
+    "turl": "https://taskallotment.issp.bjike.com:8080",
+    "furl": "https://announcement.issp.bjike.com:8080"
+
+  }
+}
+
