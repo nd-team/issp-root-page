@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="overflow:scroll;overflow-x:hidden">
+<header class="after-clear">
+    <div class="logo"><img src="images/indeximage/cut/logo.png" alt=""></div>
+    <div class="logocode">上市代码：ZS2677</div>
+</header>
+<article>
+    <div class="login-wrap">
+        <div class="login-title">欢迎登陆</div>
+        <div class="login-user"><i class="icon-user"></i><input type="text" class="user" placeholder="手机号/员工编号" /></div>
+        <div class="login-passward"><i class="icon-passward"></i><input type="password" class="password" placeholder="输入密码" /></div>
+
+        <div class="auto-login after-clear">
+            <div class="auto-checkbox">
+                <input type="checkbox" id="auto-login"> <label for="auto-login"></label>
+            </div>
+            <div class="auto-text">自动登录</div>
+            <div class="login-error"></div>
+        </div>
+        <div class="login-button"><input type="button" value="登录" class="submitUser" onclick="login()"></div>
+        <div class="login-others">
+            <a href="/repass" class="forget-passward">忘记密码</a>
+            <a href="/register">免费注册</a>
+        </div>
+    </div>
+</article>
+<footer>
+    <div>粤ICP备16104852号</div>
+    <div>版权所有@北京艾佳天诚信息技术有限公司 http://www.bjike.com</div>
+    <div>BEIJING AIJIATIANCHENG INFORMATION TECHNOLOGY CO.LGD</div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jsencrypt.min.js"></script>
+    <script>
+        function login(){
+            var encrypt = new JSEncrypt();
+            $.ajax({
+                url:"/user/publickey",
+                type:"get",
+                async:false,
+                success:function(response){
+                    if(response.code==0){
+                        encrypt.setPublicKey(response.data);
+                    }
+                }
+            });
+
+            var encrypted = encrypt.encrypt($('.password').val());
+            var user={
+                account:$('.user').val(),
+                password:$('.password').val()
+            };
+
+            $.ajax({
+                url:"/user/login",
+                type:"post",
+                data:user,
+                success:function(response){
+                    if(response.code==0){
+                        $.cookie("username",user.account,{ expires: 7 });
+                        var link = window.location.href.split('?')[1];
+                        if(link){
+                            window.location.href=link.split('=')[1]
+                        }
+                    }else if(response.code== 1){
+                        $(".login-error").html(response.msg).css("display","block");
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

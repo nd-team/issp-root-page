@@ -1,0 +1,117 @@
+    @import '../base';
+    @import '../echartsCommon';
+    .content {
+      //岗位自身样式
+      .post-right {
+        @include post-right;
+        .position-top {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+          .post-todo {
+            @include bg-color;
+            width: 40%;
+            .topTitle {
+              @include topTitle(#624789, 23px, 23px);
+            }
+            @include todo-common;
+            .todo-footer {
+              @include paging;
+            }
+            @media screen and (max-width:1700px) {
+              width: 100%;
+              margin-bottom: 20px;
+            }
+          }
+          .post-promote {
+            @include bg-color;
+            width: 25%;
+            @media screen and (max-width: 1700px) {
+              width: 49%;
+            }
+            @media screen and (max-width:1200px) {
+              width: 100%;
+              margin-bottom: 20px;
+            }
+            .topTitle {
+              @include topTitle(#EB3F69, 26px, 26px);
+            }
+            .pro-echarts {
+              .sum {
+                color: #fff;
+                padding-left: 20px;
+                padding-top: 16px;
+                font-family: "Microsoft YaHei";
+                font-size: 22px;
+                span {
+                  font-size: 50px;
+                }
+              }
+              #main {
+                width: 100%;
+                height: 300px;
+              }
+            }
+          }
+          .post-notice {
+            @include bg-color;
+            width: 31%;
+            @media screen and (max-width: 1700px) {
+              width: 49%;
+            }
+            @media screen and (max-width:1200px) {
+              width: 100%;
+            }
+            .topTitle {
+              @include topTitle(#1bc373, 18px, 18px);
+            }
+            .not-notice {
+              @include notice-list;
+              ul {
+                li {
+                  height: 37px;
+                  &:nth-of-type(even) {
+                    background-color: #34383b;
+                  }
+                  &:nth-of-type(odd) {
+                    background-color: transparent;
+                  }
+                }
+              }
+            }
+            .not-footer {
+              @include paging;
+            }
+          }
+        }
+        .position-center {
+          .bg-color {
+            @include bg-color;
+          }
+          .echartsStyle {
+            @include echartsStyle;
+          }
+          .contract {
+            .topTitle {
+              @include topTitle(#00b4fa, 24px, 24px);
+            }
+          }
+          .attendance {
+            .topTitle {
+              @include topTitle(#f4585d, 18px, 18px);
+            }
+          }
+          .reim {
+            .topTitle {
+              @include topTitle(#ffbc0c, 23px, 23px);
+            }
+          }
+          .task {
+            .topTitle {
+              @include topTitle(#1bc272, 25px, 25px);
+            }
+          }
+        }
+      }
+    }

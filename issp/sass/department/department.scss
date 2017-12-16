@@ -1,0 +1,167 @@
+@import '../base';
+@import '../echartsCommon';
+.content {
+    //部门样式
+    .post-right {
+        @include post-right;
+        .department-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            .department-notice {
+                @include bg-color;
+                .topTitle {
+                    @include topTitle(#ffbc0c, 23px, 23px);
+                }
+                width: 24%;
+                .business-echarts {
+                    #busin {
+                        height: 390px;
+                    }
+                }
+                @media screen and (max-width: 1700px) {
+                    width: 49%;
+                }
+                @media screen and (max-width:1200px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+            .department-promote {
+                width: 29%;
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+                .topPart {
+                    @include bg-color;
+                    height: 197px;
+                    @media screen and (max-width: 620px) {
+                        height: auto;
+                    }
+                    .topTitle {
+                        @include topTitle(#f82b54, 26px, 26px);
+                    }
+                    .pro-bg {
+                        width: 94%;
+                        height: 100px;
+                        margin: 20px auto;
+                        background-image: url('../../images/promote-bg.png');
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .pro-name {
+                            color: #fff;
+                            padding-top: 15px;
+                            padding-left: 8px;
+                            font-family: 'Microsoft YaHei';
+                            font-size: 14px;
+                        }
+                        .pro-times {
+                            font-family: 'Microsoft YaHei';
+                            color: #fff;
+                            margin-right: 19px;
+                            margin-top: 7px;
+                            font-size: 14px;
+                            .times {
+                                font-size: 20px;
+                                span {
+                                    font-size: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottomPart {
+                    @include bg-color;
+                    height: 238px;
+                    margin-top: 20px;
+                    @media screen and (max-width: 620px) {
+                        height: auto;
+                    }
+                    .topTitle {
+                        @include topTitle(#1bc373,
+                        18px,
+                        18px);
+                    }
+                    .not-notice {
+                        @include notice-list;
+                        ul {
+                            li {
+                                height: 37px;
+                                &:nth-of-type(even) {
+                                    background-color: #34383b;
+                                }
+                                &:nth-of-type(odd) {
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                    .not-footer {
+                        @include paging;
+                        margin: 0;
+                    }
+                }
+                @media screen and (max-width: 1700px) {
+                    width: 49%;
+                }
+                @media screen and (max-width:1200px) {
+                    width: 100%;
+                }
+            }
+            .department-todo {
+                @include bg-color;
+                @include todo-common;
+                .topTitle {
+                    @include topTitle(#624789,
+                    23px,
+                    23px);
+                }
+                .todo-footer {
+                    @include paging;
+                }
+                @media screen and (min-width: 1710px) and (max-width:1920px) {
+                    width: 43%;
+                }
+            }
+        }
+        .position-center {
+            .bg-color {
+                @include bg-color;
+            }
+            .echartsStyle {
+                @include echartsStyle;
+            }
+            .contract {
+                .topTitle {
+                    @include topTitle(#00b4fa,
+                    24px,
+                    24px);
+                }
+            }
+            .attendance {
+                .topTitle {
+                    @include topTitle(#f4585d,
+                    18px,
+                    18px);
+                }
+            }
+            .reim {
+                .topTitle {
+                    @include topTitle(#ffbc0c,
+                    23px,
+                    23px);
+                }
+            }
+            .task {
+                .topTitle {
+                    @include topTitle(#1bc272,
+                    25px,
+                    25px);
+                }
+            }
+        }
+    }
+}

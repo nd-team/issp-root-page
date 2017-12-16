@@ -1,0 +1,262 @@
+    //浏览器重置样式
+html,body,div,span,nav,header,iframe,h1,h2,h3,h4,h5,h6,p,section,footer,a,form,address,big,cite,code,del,dfn,em,img,ins,fieldset,q,s,samp,small,strike,strong,sub,sup,label,var,b,u,i,input,dl,dt,dd,ol,ul,li,figure,figcaption {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+    }
+
+    $main-font: "Microsoft YaHei";
+
+      a:focus{   //解决bootstrap中a标签移走出现下划线的问题
+        text-decoration: none;
+      }
+    html,
+    body {
+      font {
+        size: 16px;
+        family: $main-font;
+      }
+      background:#f2f4fc;
+    }
+
+    form,
+    fieldset {
+      border: 0 none;
+    }
+
+    ol,
+    ul li {
+      list-style: none;
+    }
+
+    select {
+      appearance: none;
+    }
+
+    img {
+      border: 0 none;
+      max-width: 100%;
+    }
+
+    input,
+    select {
+      outline: none;
+      font-family: $main-font;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      outline: none;
+      border: 0;
+      font-family: $main-font;
+    }
+
+    i,
+    em {
+      font-style: normal;
+    }
+
+    a {
+      color: #535353;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    svg {
+      width: 1.375rem;
+      height: 1.375rem;
+      vertical-align: middle;
+    }
+
+    .checked-none[data-style="checked"] {
+      display: none;
+    }
+
+    .checked-none[data-style="checked"]+label {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      box-shadow: inset 0 0 2px white;
+      overflow: hidden;
+    }
+
+    .checked-none[data-style="checked"]:checked+label {
+      background: url("/images/gou.png") #5a9bfd no-repeat center;
+      border: none;
+      width: 22px;
+      height: 22px;
+    }
+
+    .checkedNum[data-style="checkeds"]+label:before {
+      width: 13px;
+      height: 10px;
+      background: url("/images/gou.png") #5a9bfd no-repeat center;
+      text-align: center;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+
+    .tick {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      /*border: 1px solid #e2e2e2;*/
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+      content: "";
+      display: table;
+    }
+
+    html {
+      background-color: #272b2e;
+    }
+
+    .content-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    header {
+      margin-top: 0;
+      display: flex;
+      flex: 1;
+      height: 4.125rem;
+      width: 100%;
+      background-color: #33383b;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      .art-left {
+        margin-left: 2rem;
+        display: flex;
+        flex: 1;
+        flex-wrap: nowrap;
+        align-items: center;
+        .logo {
+          margin-left: 2.5rem;
+          font: {
+            size: 20px;
+            family: PingFang;
+          }
+          ;
+          color: white;
+          i {
+            color: #00b4fa;
+          }
+        }
+        .set {
+          flex: 0 0 28%;
+          text-align: center;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          em {
+            margin-right: 20px;
+            svg {
+              width: 2rem;
+              height: 1.5rem;
+              fill: white;
+            }
+          }
+          span {
+            color: #fff;
+          }
+        }
+        .search {
+          color: white;
+          font-size: 14px;
+          flex: 1;
+          family: $main-font;
+          svg {
+            width: 1.8rem;
+            height: 3.8rem;
+            fill: white;
+          }
+        }
+      }
+      .art-right {
+        position: relative;
+        input {
+          width: 15.625rem;
+          height: 2.5rem;
+          border-radius: 1rem;
+          padding-left: 1rem;
+          border: 1px solid #1581ac;
+          background-color: #2c3033;
+          color: #fff;
+        }
+        em {
+          position: absolute;
+          left: 14rem;
+          svg {
+            width: 1.8rem;
+            height: 3.8rem;
+            fill: #1581ac;
+          }
+        }
+        display: flex;
+        flex: 0 0 35em;
+        flex-wrap: nowrap;
+        align-items: center;
+        .login {
+          font-size: 12px;
+          margin-left: 5rem;
+          width: 10rem;
+          color: #bcbcbc;
+          display: flex;
+          align-items: center;
+          span {
+            margin-right: 5px;
+          }
+          i {
+            font-size: 18px;
+          }
+        }
+        .close {
+          position: relative;
+          width: 10rem;
+          em {
+            position: absolute;
+            left: -5rem;
+            top: -1.9rem;
+            svg {
+              width: 1rem;
+              fill: #1581ac;
+            }
+          }
+        }
+      }
+    }
+
+    .main-module {
+      background-color: #333333;
+      height: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+    }
+
+    .content {
+      width: 100%;
+      height: auto;
+      background-color: #272b2e;
+      
+      
+    }
