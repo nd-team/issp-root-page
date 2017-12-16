@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>个人维度</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="ISSP系统首页">
+    <meta name="description" content="ISSP系统首页">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home/system.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i>ISSP</i>平台</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-th-list"></span>个人信息
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active">
+                                <a href="#">个人维度</a>
+                            </li>
+                            <li>
+                                <a href="../position/post.html">岗位维度</a>
+                            </li>
+                            <li>
+                                <a href="#">部门维度</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="companyName hidden-xs">北京艾佳天诚信息技术有限公司</div>
+                <ul class="nav navbar-nav navbar-right choose  visible-lg">
+                    <li>
+                        <a href="#">修改密码</a>
+                    </li>
+                    <li>
+                        <a href="#">用户名登录</a>
+                    </li>
+                    <li>
+                        <a href="">|</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em>
+                                <svg role="img" class="quit">
+                                    <use xlink:href="#quit"></use>
+                                </svg>
+                            </em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-left hidden-xs" onmouseleave="goOut()">
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="搜索">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <ul class="navMenu" id="navMenu">
+
+        </ul>
+        <section class="other" id="otherNavMenu" onmouseleave="goOut(this)">
+
+        </section>
+    </nav>
+    <section class="content">
+        <section class="post-right">
+            <!-- 第一部分 -->
+            <section class="person-top">
+                <section class="person-left">
+                    <div class="topUp">
+                        <div class="person-notice bg-color">
+                            <div class="topTitle">
+                                <div class="topImg">
+                                    <em>
+                                        <svg role="img" class="staff">
+                                            <use xlink:href="#staff"></use>
+                                        </svg>
+                                    </em>
+                                    <h3>员工信息管理</h3>
+                                </div>
+                            </div>
+                            <section class="person-info">
+                                <a class="headImg">
+                                    <img src="../../images/person/headImg.png">
+                                </a>
+                                <h3>
+                                    <span class="userName">王博文</span>
+                                    <em>（在职）</em>
+                                </h3>
+                                <table>
+                                    <tr>
+                                        <td>员工编号：</td>
+                                        <td class="empNum">IKE001234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>在职时间：</td>
+                                        <td>2017-05-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>个人邮箱账号：</td>
+                                        <td>zhengxiaohong_aj@163.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>出生日期：</td>
+                                        <td>2017-05-16</td>
+                                    </tr>
+                                </table>
+                                <a href="https://archive.issp.bjike.com/" class="getmore">查看更多</a>
+                            </section>
+                        </div>
+                        <div class="person-promote">
+                            <div class="topPart bg-color">
+                                <div class="topTitle sm-Title">
+                                    <div class="topImg">
+                                        <em>
+                                            <svg role="img" class="promote">
+                                                <use xlink:href="#promote"></use>
+                                            </svg>
+                                        </em>
+                                        <h3>晋升管理</h3>
+                                    </div>
+                                    <div class="time-btn post-btn">
+                                        <ul class="listTab">
+                                            <li class="active">
+                                                <a href="javascript:void(0)">月度</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">季度</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">年度</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pro-bg">
+                                    <div class="pro-name">
+                                        管理等级晋升
+                                    </div>
+                                    <div class="pro-times">
+                                        <p class="times">
+                                            <span>12</span>次</p>
+                                        <p class="indro">已晋升次数</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomPart bg-color">
+                                <div class="topTitle">
+                                    <div class="topImg">
+                                        <em>
+                                            <svg role="img" class="notice">
+                                                <use xlink:href="#notice"></use>
+                                            </svg>
+                                        </em>
+                                        <h3>公告</h3>
+                                    </div>
+                                </div>
+                                <div class="not-notice">
+                                    <ul class="carousel">
+                                        <li class="clickSty">
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋国家中秋节放假通知节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中国家中秋节放假通知国家中秋节放假通知秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>国家中秋节放假通知</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="not-footer">
+                                    <span>&lt;</span>
+                                    <ol>
+                                        <li class="olSty">
+                                            <a href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">...</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">6</a>
+                                        </li>
+                                    </ol>
+                                    <span>&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topDown">
+                        <div class="person-todo bg-color">
+                            <div class="topTitle">
+                                <div class="topImg">
+                                    <em>
+                                        <svg role="img" class="todo">
+                                            <use xlink:href="#todo"></use>
+                                        </svg>
+                                    </em>
+                                    <h3>待办事件</h3>
+                                </div>
+                            </div>
+                            <div class="info-content">
+                                <div class="todo-content">
+                                    <ul>
+                                        <li class="info-part info-part1">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">10</p>
+                                                <p class="text">需要查看事件</p>
+                                            </a>
+                                        </li>
+                                        <li class="info-part info-part2">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">5</p>
+                                                <p class="text">需要制作事件</p>
+                                            </a>
+                                        </li>
+                                        <li class="info-part info-part3">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">0</p>
+                                                <p class="text">需要审核事件</p>
+                                            </a>
+                                        </li>
+                                        <li class="info-part info-part4">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">25</p>
+                                                <p class="text">需要确认事件</p>
+                                            </a>
+                                        </li>
+                                        <li class="info-part info-part5">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">0</p>
+                                                <p class="text">需要核对事件</p>
+                                            </a>
+                                        </li>
+                                        <li class="info-part info-part6">
+                                            <a href="javascript:void(0)">
+                                                <p class="num">0</p>
+                                                <p class="text">预测事件</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="todo-ul">
+                                    <ul class="listTab">
+                                        <li class="active">
+                                            <a href="javascript:void(0)">待处理事件</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">未查看未处事件</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">逾期处理事件</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">已处理事件</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="todo-notice">
+                                    <ul class="clip">
+                                        <li class="active">
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                                <span>2017-05-16</span>
+                                            </a>
+                                        </li>  <li>
+                                        <a href="javascript:void(0)">
+                                            <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                            <span>2017-05-16</span>
+                                        </a>
+                                    </li>  <li>
+                                        <a href="javascript:void(0)">
+                                            <span>&laquo;国家中秋节放假通知&raquo;</span>
+                                            <span>2017-05-16</span>
+                                        </a>
+                                    </li>
+
+                                    </ul>
+                                </div>
+                                <div class="todo-footer">
+                                    <span>&lt;</span>
+                                    <ol>
+                                        <li class="olSty">
+                                            <a href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">...</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">6</a>
+                                        </li>
+                                    </ol>
+                                    <span>&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="person-right">
+                    <div class="person-notice bg-color">
+                        <div class="topTitle">
+                            <div class="topImg">
+                                <em>
+                                    <svg role="img" class="promote">
+                                        <use xlink:href="#promote"></use>
+                                    </svg>
+                                </em>
+                                <h3>决策平衡</h3>
+                            </div>
+                        </div>
+                        <section class="person-echarts">
+                            <div id="backImg">
+                                <div class="textToImg">
+                                    <img src="../../images/person/decision.png" class="borderImg">
+                                    <div class="data sm-data data1">
+                                        <span>潜在客户：
+                                            <em>2</em>
+                                        </span>
+                                        <span>未完成&nbsp;&nbsp;&nbsp;：
+                                            <em>2</em>
+                                        </span>
+                                    </div>
+                                    <div class="data sm-data data2">
+                                        <span>今日打卡：
+                                            <em>2</em>
+                                        </span>
+                                        <span>未打卡&nbsp;&nbsp;&nbsp;：
+                                            <em>2</em>
+                                        </span>
+                                    </div>
+                                    <div class="data sm-data data3">
+                                        <span>任务接收：
+                                            <em>2</em>
+                                        </span>
+                                        <span>未完成&nbsp;&nbsp;&nbsp;：
+                                            <em>2</em>
+                                        </span>
+                                    </div>
+                                    <div class="data sm-data data4">
+                                        <span>今日收入：
+                                            <em>2</em>
+                                        </span>
+                                        <span>今日支出：
+                                            <em>2</em>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div id="person-decision">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <!-- 第二部分的图表 -->
+            <section class="position-center layout" id="graph-person">
+            </section>
+        </section>
+
+    </section>
+    <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/echarts.min.js"></script>
+    <script src="/js/echarts-templeta.js"></script>
+    <script src="/js/system.js"></script>
+    <script>
+        function One() {}
+
+        function isFour(obj) {
+            var arr = obj.four;
+            var tempFour = '<ul class="other-navMenuChild">';
+            for (var i = 0, len = arr.length; i < len; i++) {
+                tempFour +=
+                    `<li>
+                        <a href="${arr[i].url}" title="${arr[i].name}">${arr[i].name}</a>
+                    </li>`
+            }
+            return tempFour += '</ul>'
+        }
+
+        function isThree(obj) {
+            var arr = obj.three;
+            var tempThree = '<ol class="other-part">';
+            for (var i = 0, len = arr.length; i < len; i++) {
+                if (arr[i].four) {
+                    var tempFour = isFour(arr[i]);
+                }
+                tempThree +=
+                    ` <li>
+                    <a href="#" onclick="childclick(this)">
+                        <span>${arr[i].name}</span>
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                    ${tempFour||""}
+                </li>`
+            }
+            return tempThree += '</ol>';
+        }
+        var liNum = 0;
+
+        function isTwo(obj) {
+            var arr = obj.two;
+            var temp = '<ul class="navMenu-child">';
+
+            for (let i = 0, len = arr.length; i < len; i++) {
+                if (arr[i].three) {
+                    var tempThree = isThree(arr[i]);
+                }
+                temp +=
+                    ` <li class="parentLi" onmouseover="goIn(${liNum})">
+                        <a href="#">
+                            <span>${arr[i].name}</span>
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </li>`
+                liNum++;
+                $("#otherNavMenu").append(`${tempThree||""}`)
+            }
+            return temp += '</ul>'
+        }
+
+        One.prototype.draw = function (obj) {
+            if (obj.two) {
+                var temp = isTwo(obj);
+            }
+
+            var templeta =
+                `<li><a href="javascript:void(0)" onclick="aclick(this)">
+                    <span class="nav-text">
+                    <svg role="img" class="${obj.icon}">
+                    <use xlink:href="#${obj.icon}"></use>
+                    </svg>${obj.name} </span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                    ${temp || ''}
+                </li>`
+            return templeta;
+        }
+
+        function insertOne(obj, ele) {
+            var oneData = new One();
+            ele.append(oneData.draw(obj));
+        }
+
+        $(document).ready(function () {
+            $.ajax({
+                dataType: 'json',
+                url: '../../nav-left.json',
+                success: function (data) {
+                    var dataObj = eval(data).data;
+                    //一层循环
+                    $.each(dataObj, function (n1, value) {
+                        insertOne(value, $('.navMenu'));
+                    });
+                }
+            });
+        });
+
+        function aclick(that) {
+            openChild(".navMenu", ".navMenu-child",that)
+        }
+
+        function childclick(that) {
+            openChild(".other-part", ".other-navMenuChild",that)
+        }
+
+        function openChild(ele, eleChild,that) {
+            $(ele + '>li>a>.glyphicon').removeClass("glyphicon-menu-down");
+            if ($(that).next(eleChild).hasClass('open') == false) {
+                $(ele).find(eleChild).slideUp(300);
+                $(ele).find("li").removeClass("open");
+                $(that).next(eleChild).addClass("open").slideDown(300);
+                $(that).find(".glyphicon").addClass("glyphicon-menu-down");
+            } else {
+                $(that).next(eleChild).removeClass("open").slideUp(300);
+            }
+        }
+
+        function goIn(liNum) {
+            $(".other").show();
+            $(".nav-left .other .other-part").hide().eq(liNum).show();
+        }
+
+        function goOut() {
+            $(".other").hide();
+        }
+    </script>
+</body>
+</html>

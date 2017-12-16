@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找回密码</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<header class="after-clear box-shadow">
+    <div class="logo"><img src="images/cut/logo.png" alt=""></div>
+    <div class="logocode">上市代码：ZS2677</div>
+    <div class="header-route">
+        <a href="/register">注册</a>
+        <span>|</span>
+        <a href="/login">登录</a>
+    </div>
+</header>
+<section>
+    <div class="search-title">找回密码</div>
+    <nav>
+        <div class="ball-wrap">
+            <div class="ball-blue ball-one">1</div>
+            <div class="ball-text">输入手机号</div>
+        </div>
+        <div class="ball-wrap">
+            <div class="ball-white ball-two">2</div>
+            <div class="ball-text">验证身份</div>
+        </div>
+        <div class="ball-wrap">
+            <div class="ball-white ball-three">3</div>
+            <div class="ball-text">设置密码</div>
+        </div>
+    </nav>
+    <div class="page1">
+        <div class="tip-word">使用绑定的手机号码找回</div>
+        <div class="phone"><input type="text" placeholder="请输入手机号码" name="phone"><span class='state1'></span></div>
+        <div class="login-button submitButton"><input type="button" value="提交" class="submitError" onclick="stepFirst()"></div>
+    </div>
+    <div class="page2">
+        <div class="tip-word">验证原手机号</div>
+        <div class="identifycode">
+            <div class="phone"><input type="text" placeholder="请输入手机收到的验证码" class="code" onchange="codecomplete()"><div class="getcode getcode-start" onclick="getcode()">获取验证码</div></div>
+            <div class="input-tip" >短信已发送,请输入收到的短信验证码</div>
+        </div>
+
+        <div class="identify-button"><input type="button" value="提交" class="submitError" onclick="stepSecond()"></div>
+    </div>
+    <div class="page3 after-clear">
+        <div class="tip-word">设置您的登录密码</div>
+        <div class="input-passward"><input type="text" placeholder="密码由6-20位英文字母,数字或符号组成" name="passward"><span class='state1'></span></div>
+        <div class="tip-word">再次输入您的密码</div>
+        <div class="input-passward"><input type="text" placeholder="密码由6-20位英文字母,数字或符号组成" name="repass"><span class='state1'></span></div>
+        <div class="passward-button"><input type="button" value="确认" class="submitError" onclick="stepThird()"></div>
+    </div>
+
+</section>
+<footer>
+    <div>粤ICP备16104852号</div>
+    <div>版权所有@北京艾佳天诚信息技术有限公司 http://www.bjike.com</div>
+    <div>BEIJING AIJIATIANCHENG INFORMATION TECHNOLOGY CO.LGD</div>
+</footer>
+<div class="mask-wrap">
+    <div class="mask"></div>
+    <div class="passward-success">
+        <div class="success-icon"><img src="images/cut/成功.png" alt=""></div>
+        <div class="success-text">成功设置密码</div>
+        <div class="success-jump">正在跳转到登陆页面</div>
+    </div>
+</div>
+</body>
+</html>
