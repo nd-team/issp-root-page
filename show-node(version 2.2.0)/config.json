@@ -1,0 +1,17 @@
+{
+  "default":"dev",
+  "dev": {
+    "aurl": "https://organize.issp.bjike.com:8080",
+    "burl": "https://businessproject.issp.bjike.com:8080",
+    "curl": "https://businessproject.issp.bjike.com:8080",
+    "durl": "https://user.issp.bjike.com:8080",
+    "vurl": "https://announcement.issp.bjike.com:8080",
+    "turl": "https://taskallotment.issp.bjike.com:8080",
+    "eurl": "https://event.issp.bjike.com:8080",
+    "furl": "https://feedback.issp.bjike.com:8080",
+    "gurl": "https://royalty.issp.bjike.com:8080",
+    "hurl": "https://financedispatch.issp.bjike.com:8080",
+    "iurl": "https://oilcardmanage.issp.bjike.com:8080",
+    "jurl": "https://attendance.issp.bjike.com:8080"
+  }
+}
