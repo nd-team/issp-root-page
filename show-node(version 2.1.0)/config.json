@@ -1,0 +1,18 @@
+{
+  "default":"dev",
+  "dev": {
+    "aurl": "http://192.168.0.57:51506(组织结构)",
+    "burl": "https://businessproject.issp.bjike.com:8080(报销管理)",
+    "curl": "https://user.issp.bjike.com:8080(商务合同)",
+    "durl": "http://192.168.0.56:51702",
+    "vurl": "https://organize.issp.bjike.com:8080(公告)",
+    "turl": "https://taskallotment.issp.bjike.com:8080(任务分配)",
+    "eurl": "https://announcement.issp.bjike.com:8080(待办事项)",
+    "furl": "https://announcement.issp.bjike.com:8080(反馈)",
+    "gurl": "https://announcement.issp.bjike.com:8080(管理提成)",
+    "hurl": "https://announcement.issp.bjike.com:8080(出车管理)",
+    "iurl": "https://announcement.issp.bjike.com:8080(油卡管理)",
+    "jurl": "https://announcement.issp.bjike.com:8080(考勤)"
+
+  }
+}
